@@ -8,20 +8,45 @@ html(lang='en')
     meta(http-equiv='x-ua-compatible' content='ie=edge')
     meta(name='Rob Caluza' content='Free Code Camp')
     <!-- CSS-- Styles -->
-    link(rel='stylesheet' href='CSS/main.css')
+    
     link(rel='stylesheet' href='CSS/mdb.min.css')
-    link(rel='stylehseet' href='CSS/bootstrap.min.css')
+    link(rel='stylesheet' href='CSS/bootstrap.min.css')
+    link(rel='stylesheet' href='CSS/main.css')
   
   body
-    div(class='jumbotron')
+    div(class='container-fluid')
       h1 Wikipedia Viewer
-    div(class='container')
-      
+      br
+      img(src='https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/220px-Wikipedia-logo-v2.svg.png' id="wikiLogo")
+    div(class='container-fluid')
+      a(href='https://en.wikipedia.org/wiki/Special:Random' target="_blank"  id='wikiRand' ) Random-Wiki
+      br
+      input(id='searchQuery' type='search' placeholder='Search...')
+      br
+      button(id='search' type='submit' class='btn btn-primary') Search
+        
+    div(class='container')  
+      ul(id='output')
     
+        
+    script(rel='text/javascript' src='JS/jquery-3.1.1.min.js')
+    script(rel='text/javascript' src='JS/script.js')
     
-    script(scr='JS/main.js')
-    script(src='JS/bootsrap.min.js')
-    script(src='JS/jquery-2.2.3.min.js')
+  footer
+    div(class='foot')
+      p Coded by
+        a(href='https://codepen.io/s31181')
+          p Rob Caluza
+      div(class='row')
+        div(class='col-md-4')
+          a(href='https://twitter.com/rob_cal01' target="_blank")
+            img(src='https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png' id='twitter')
+        div(class='col-md-4')
+          a(href='https://codepen.io/s31181' target="_blank")
+            img(src='https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png' id='codepen')
+        div(class='cold-md-4')
+          a(href='https://github.com/s31181' target="_blank")
+            img(src='http://image.flaticon.com/icons/png/512/25/25231.png' id='gitHub')
     
     
   
